@@ -14,7 +14,7 @@ namespace OnlineStore.WebUI.Controllers
         
         public ProductController(IProductRepository repo)
         {
-            repository = repo;
+            repository = repo; //comment
         }
 
         public ActionResult List(int page=2)

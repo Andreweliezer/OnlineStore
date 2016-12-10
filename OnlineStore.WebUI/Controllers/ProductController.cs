@@ -14,12 +14,12 @@ namespace OnlineStore.WebUI.Controllers
         
         public ProductController(IProductRepository repo)
         {
-            repository = repo; //comment
+            repository = repo; //commen
         }
 
         public ActionResult List(int page=2)
         {
-            return View(repository.Products
+            return View(repository.Products // third comment
                 .OrderBy(p=>p.productId)
                 .Skip((page-1)*pageSize)
                 .Take(pageSize));
